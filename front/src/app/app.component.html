@@ -1,0 +1,15 @@
+
+<!-- chat.component.html -->
+
+<div>
+  <h2>Chat</h2>
+  
+  <div *ngFor="let mensagem of mensagens">
+      {{ mensagem }}
+  </div>
+
+  <textarea [(ngModel)]="novaMensagem"></textarea>
+  <button (click)="enviarMensagem()">Enviar</button>
+</div>
+
+<router-outlet />
